@@ -4,6 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ .Title }}</title> {{ $css := resources.Get "main.css" }} {{ $js := resources.Get "main.js" }} 
     {{ "<!-- Meta -->" | safeHTML }}
-    <link rel="preload stylesheet" href="{{ $css.Permalink }}" as="style" type="text/css" crossorigin="anonymous"> 
+    <link rel="preload stylesheet" href="{{ $css.Permalink }}" as="style" type="text/css"> 
     <script type="text/javascript" src="{{ $js.Permalink }}" defer></script>
 </head> 

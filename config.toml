@@ -1,6 +1,11 @@
-baseURL = "https://van.ski"
+baseURL = "/"
 languageCode = "en-us"
 title = "van.ski" 
+
+[markup]
+    [markup.goldmark]
+        [markup.goldmark.renderer]
+            unsafe = true
 
 
 
