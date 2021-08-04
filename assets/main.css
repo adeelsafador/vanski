@@ -79,10 +79,7 @@ img {
 
 ul { list-style: none; }
 
-hr { 
-    color: var(--text); 
-    margin-bottom: 40px;
-}
+hr { color: var(--text); }
 
 a { 
     text-decoration: none;
@@ -295,6 +292,8 @@ footer {
         font-size: 1.1rem;
     } 
 
+    hr { margin-bottom: 40px; }
+
     .socmed { 
         margin-top: 20px;
     }
@@ -323,6 +322,8 @@ footer {
     body {
         font-size: 1.2rem;
     } 
+
+    hr { margin-bottom: 40px; }
 
     .socmed { 
         margin-top: 25px;
@@ -353,6 +354,8 @@ footer {
     body {
         font-size: 1.2rem;
     } 
+    
+    hr { margin-bottom: 40px; }
 
     .socmed { 
         margin-top: 25px;

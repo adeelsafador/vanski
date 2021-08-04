@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "van.ski" 
+title = "Home | van.ski" 
 
 [markup]
     [markup.goldmark]
@@ -14,8 +14,8 @@ title = "van.ski"
             X-Frame-Options = "DENY"
             X-XSS-Protection = "1; mode=block"
             X-Content-Type-Options = "nosniff"
-            Content-Security-Policy: "default-src 'self';" 
-            Strict-Transport-Security: "max-age=63072000; includeSubDomains; preload"
-            Referrer-Policy: "no-referrer" 
-            Server: "cloudflare"
-            x-powered-by: "IceBaby"
+            Content-Security-Policy = "default-src 'self';" 
+            Strict-Transport-Security = "max-age=63072000; includeSubDomains; preload"
+            Referrer-Policy = "no-referrer" 
+            Server = "cloudflare"
+            x-powered-by = "IceBaby"
