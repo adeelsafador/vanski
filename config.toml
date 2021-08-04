@@ -7,5 +7,15 @@ title = "van.ski"
         [markup.goldmark.renderer]
             unsafe = true
 
-
-
+[server]
+    [[server.headers]]
+        for = "/**.html"
+        [server.headers.values]
+            X-Frame-Options = "DENY"
+            X-XSS-Protection = "1; mode=block"
+            X-Content-Type-Options = "nosniff"
+            Content-Security-Policy: "default-src 'self';" 
+            Strict-Transport-Security: "max-age=63072000; includeSubDomains; preload"
+            Referrer-Policy: "no-referrer" 
+            Server: "cloudflare"
+            x-powered-by: "IceBaby"
