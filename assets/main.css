@@ -57,6 +57,9 @@ a.icon:hover { transform: translateY(-0.1em); }
 
 /* CSS Common */
 
+.center { text-align: center; }
+.underline { text-decoration: underline; }
+
 * {
     margin: 0;
     padding: 0;
@@ -65,7 +68,6 @@ a.icon:hover { transform: translateY(-0.1em); }
 
 body { 
     font-family: 'Inconsolata', monospace;
-    /* background-color: #f0f3f4;  */
     background: var(--background);
     color: var(--text); 
 }
