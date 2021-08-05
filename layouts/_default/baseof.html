@@ -2,6 +2,7 @@
 <html lang="en" prefix="og: http://ogp.me/ns#">
 {{ partial "head.html" . }}
 <body>
-{{- block "main" . }}{{- end }}
+{{- block "main" . }}{{- end }} 
+{{ if .IsHome }} {{ partial "footer.html" }} {{ end }}
 </body>
 </html>
