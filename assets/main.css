@@ -1,44 +1,41 @@
-
 /* Fonts */ 
-/* inconsolata-regular - latin-ext_latin */
+/* inconsolata (font-family: 'Inconsolata', monospace;) */
 @font-face {
-    font-family: 'inconsolata-v21-latin-ext_latin';
+    font-family: 'inconsolata-font';
     font-style: normal;
     font-weight: 400;
-    src: url('fonts/inconsolata-v21-latin-ext_latin-regular.eot'); /* IE9 Compat Modes */
+    src: url('fonts/inconsolata-font.eot'); /* IE9 Compat Modes */
     src: local(''),
-         url('fonts/inconsolata-v21-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/inconsolata-v21-latin-ext_latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/inconsolata-v21-latin-ext_latin-regular.woff') format('woff'), /* Modern Browsers */
-         url('fonts/inconsolata-v21-latin-ext_latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/inconsolata-v21-latin-ext_latin-regular.svg#Inconsolata') format('svg'); /* Legacy iOS */
-}  
+         url('fonts/inconsolata-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('fonts/inconsolata-font.woff2') format('woff2'), /* Super Modern Browsers */
+         url('fonts/inconsolata-font.woff') format('woff'), /* Modern Browsers */
+         url('fonts/inconsolata-font.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('fonts/inconsolata-font.svg#Inconsolata') format('svg'); /* Legacy iOS */
+} 
 
-/* Color Variables */
+/* Colors */ 
+:root {
+    --black: #1c1c1b;
+    --white: #f1f4ff; 
+    --lightblue: #8abad3;
+} 
 
-/* Theme */
+/* Theme */ 
 .theme-light {
-    --background: #f1f4ff !important;
-    --text: #1c1c1b !important;
-    --link-hover: #8abad3 !important;
+    --background: var(--white);
+    --text: var(--black); 
+    --link-hover: var(--lightblue);
 }
 
 .theme-dark {
-    --background: #1c1c1b !important;
-    --text: #f1f4ff !important;
-    --link-hover: #8abad3 !important;
+    --background: var(--black);
+    --text: var(--white);
+    --link-hover: var(--lightblue);
 }
 
-/* Icons */
-svg {
-    width: 100%;
-    height: 100%;
-} 
-
-.theme--label, .theme--icon { margin: 0 5px; }
+.theme--label, .theme--icon { margin: 0 5px; } 
 .theme--icon { font-size: 1.5em; }
-
-.icon {
+.icons {
     width: 1.5rem;
     height: 1.5rem;
     margin: 0 10px;
@@ -48,51 +45,43 @@ svg {
     display: inline-block;
 } 
 
-a.icon {
-    transition: fill 280ms cubic-bezier(0, 0.5, 0.2, 1), 
-    transform 280ms cubic-bezier(0, 0.5, 0.2, 1);
-} 
-
-a.icon:hover { transform: translateY(-0.1em); } 
-
-/* CSS Common */
-
-.center { text-align: center; }
-.underline { text-decoration: underline; }
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body { 
-    font-family: 'Inconsolata', monospace;
-    background: var(--background);
-    color: var(--text); 
-}
-
-img { 
-    max-width: 100%;
-    height: auto;
-} 
-
-.--inline { display: inline;}
-
-ul { list-style: none; }
-
-hr { color: var(--text); }
-
-a { 
-    text-decoration: none;
-    color: var(--text);
-}
-
+a { text-decoration: none; color: var(--text); }
 a:visited{ color: var(--text); }
 a:hover { color: var(--link-hover);}
 a:active { color: indigo; }
+a.icons {
+    transition: fill 280ms cubic-bezier(0, 0.5, 0.2, 1), 
+    transform 280ms cubic-bezier(0, 0.5, 0.2, 1);
+} 
+a.icons:hover { transform: translateY(-0.1em); } 
 
+/* Template */ 
+.--left { text-align: left; }
+.--right { text-align: right; }
+.--center { text-align: center; } 
+.--block { display: block; }
+.--inline { display: inline; } 
+.--flex { display: flex; } 
+.--grid { display: grid; }
+.--uline { text-decoration: underline; } 
+.--hidden { visibility: hidden; } 
+.--visible { visibility: visible; }
 
+/* Common */ 
+* { margin: 0; padding: 0; box-sizing: border-box; } 
+body { font-family: 'Inconsolata', monospace; background: var(--background); color: var(--text); }
+.stopfles { padding: 0 15px; margin: 0 auto; } 
+a { text-decoration: none; } 
+ul li { list-style: none; }
+svg { width: 100%; height: 100%; } 
+img { max-width: 100%; height: auto; } 
+h1 { font-size: 1.5em; } 
+h2 { font-size: 1.4em; } 
+h3 { font-size: 1.3em; } 
+h4 { font-size: 1.2em; } 
+h5 { font-size: 1,1em; } 
+
+/* Site-Nav */ 
 nav {
     display: flex;
     justify-content: space-around; 
@@ -104,20 +93,17 @@ nav ul {
     justify-content: right;
 } 
 
-nav ul li a { margin: 10px; }
+nav ul li a { margin: 10px; } 
+section > hr { color: var(--text); margin-bottom: 30px; }
 
-.socmed ul li {
-    display: inline-block;
-}
-
+/* Profile Picture */
 .profile-picture { text-align: center; }
-.profile-picture img { width: 150px; } 
+.profile-picture img { width: 150px; border-radius: 50%; } 
+.socmed ul li { display: inline-block; } 
+.socmed { margin-top: 25px;} 
 
 /* Main Link */ 
-.main-link {
-    text-align: center;
-    margin-top: 40px;
-}
+.main-link { margin: 15px 0; }
 
 .main-link ul li a {
     display: inline-block;
@@ -168,13 +154,10 @@ text
 .main-link ul li a:active,
 .main-link ul li.current_page_item a {
     border-bottom: 2px solid var(--background);
-}
+} 
 
-footer { 
-    text-align: center;
-    margin-top: 40px;
-}
-
+/* Footer */ 
+footer { margin-top: 40px; } 
 .scewer {
     display: flex;
     justify-content: center;
@@ -182,7 +165,6 @@ footer {
     padding: 1rem 0;
     color: var(--text);
 }
-
 .scewer:after,
 .scewer:before {
     flex: 1;
@@ -191,175 +173,93 @@ footer {
     height: 1;
     border-top: 2px solid var(--text);
 } 
-
 .scewer:after { margin-left: 1rem; }
-  
 .scewer:before { margin-right: 1rem; }
 
+/* Grid View */ 
+/* .rw::after { content: ""; clear: both; display: table; }  */ 
 
-/* Media Queries */
-
-
-.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-
-
-.bar::after {
+.rw::before, .rw::after {
     content: "";
     clear: both;
     display: table;
-} 
-
-[class*="kol-"] {
+}
+  
+[class*="cl-"] {
     float: left;
-    padding: 15px;
+    padding: 15px; 
+    width: 100%; 
+}
+
+/* Breakpoints */ 
+
+/* Extra Small devices (portrait small phones) */
+@media only screen and (max-width: 575px) {
+    body { font-size: 1rem; } 
+
+    .cl-s-1 {width: 8.33%;}
+    .cl-s-2 {width: 16.66%;}
+    .cl-s-3 {width: 25%;}
+    .cl-s-4 {width: 33.33%;}
+    .cl-s-5 {width: 41.66%;}
+    .cl-s-6 {width: 50%;}
+    .cl-s-7 {width: 58.33%;}
+    .cl-s-8 {width: 66.66%;}
+    .cl-s-9 {width: 75%;}
+    .cl-s-10 {width: 83.33%;}
+    .cl-s-11 {width: 91.66%;}
+    .cl-s-12 {width: 100%;}
 } 
 
-[class*="kol-"] {
-    width: 100%;
-}
+/* Small devices (portrait tablets and large phones) */
+@media only screen and (min-width: 576px) { 
+    body { font-size: 1rem; } 
+    .stopfles { width: 90%; }
 
-/* Extra small devices */
-@media (max-width: 575.99px) {
-    body {
-        font-size: 1rem;
-    } 
-
-    hr { visibility: hidden; }
-
-    .socmed ul { text-align: center; }
-
-    .socmed { 
-        margin-top: 30px;
-    }
-}
-  
-/* Small devices */
-@media (min-width: 576px) and (max-width: 767.99px) {
-    body {
-        font-size: 1rem;
-    } 
-    
-    hr { visibility: hidden; }
-
-    .socmed ul {
-        text-align: center;
-    } 
-
-    .socmed { 
-        margin-top: 30px;
-    }
-
-    .kol-s-1 {width: 8.33%;}
-    .kol-s-2 {width: 16.66%;}
-    .kol-s-3 {width: 25%;}
-    .kol-s-4 {width: 33.33%;}
-    .kol-s-5 {width: 41.66%;}
-    .kol-s-6 {width: 50%;}
-    .kol-s-7 {width: 58.33%;}
-    .kol-s-8 {width: 66.66%;}
-    .kol-s-9 {width: 75%;}
-    .kol-s-10 {width: 83.33%;}
-    .kol-s-11 {width: 91.66%;}
-    .kol-s-12 {width: 100%;} 
+    .cl-m-1 {width: 8.33%;}
+    .cl-m-2 {width: 16.66%;}
+    .cl-m-3 {width: 25%;}
+    .cl-m-4 {width: 33.33%;}
+    .cl-m-5 {width: 41.66%;}
+    .cl-m-6 {width: 50%;}
+    .cl-m-7 {width: 58.33%;}
+    .cl-m-8 {width: 66.66%;}
+    .cl-m-9 {width: 75%;}
+    .cl-m-10 {width: 83.33%;}
+    .cl-m-11 {width: 91.66%;}
+    .cl-m-12 {width: 100%;}
 
 }
-  
-/* Medium devices */
-@media (min-width: 768px) and (max-width: 991.98px) { 
+ 
+/* Medium devices (landscape tablets) */
+@media only screen and (min-width: 768px) { 
+    body { font-size: 1.1rem; } 
+    .stopfles { width: 75%; } 
 
-    .kol-m-1 {width: 8.33%;}
-    .kol-m-2 {width: 16.66%;}
-    .kol-m-3 {width: 25%;}
-    .kol-m-4 {width: 33.33%;}
-    .kol-m-5 {width: 41.66%;}
-    .kol-m-6 {width: 50%;}
-    .kol-m-7 {width: 58.33%;}
-    .kol-m-8 {width: 66.66%;}
-    .kol-m-9 {width: 75%;}
-    .kol-m-10 {width: 83.33%;}
-    .kol-m-11 {width: 91.66%;}
-    .kol-m-12 {width: 100%;} 
+    .cl-1 {width: 8.33%;}
+    .cl-2 {width: 16.66%;}
+    .cl-3 {width: 25%;}
+    .cl-4 {width: 33.33%;}
+    .cl-5 {width: 41.66%;}
+    .cl-6 {width: 50%;}
+    .cl-7 {width: 58.33%;}
+    .cl-8 {width: 66.66%;}
+    .cl-9 {width: 75%;}
+    .cl-10 {width: 83.33%;}
+    .cl-11 {width: 91.66%;}
+    .cl-12 {width: 100%;}
 
-    .container {
-        width: 70%;
-    }
+} 
 
-    body {
-        font-size: 1.1rem;
-    } 
+/* Large devices (small laptops and desktops) */
+@media only screen and (min-width: 992px) { 
+    body { font-size: 1.2rem; } 
+    .stopfles { width: 65%; }
 
-    hr { margin-bottom: 40px; }
-
-    .socmed { 
-        margin-top: 20px;
-    }
 }
 
-/* Large devices */
-@media (min-width: 992px) and (max-width: 1199.99px) { 
-
-    .kol-1 {width: 8.33%;}
-    .kol-2 {width: 16.66%;}
-    .kol-3 {width: 25%;}
-    .kol-4 {width: 33.33%;}
-    .kol-5 {width: 41.66%;}
-    .kol-6 {width: 50%;}
-    .kol-7 {width: 58.33%;}
-    .kol-8 {width: 66.66%;}
-    .kol-9 {width: 75%;}
-    .kol-10 {width: 83.33%;}
-    .kol-11 {width: 91.66%;}
-    .kol-12 {width: 100%;} 
-
-    .container {
-        width: 60%;
-    }
-
-    body {
-        font-size: 1.2rem;
-    } 
-
-    hr { margin-bottom: 40px; }
-
-    .socmed { 
-        margin-top: 25px;
-    }
-    
-}
-  
-/* Extra large devices */
-@media (min-width: 1200px) { 
-
-    .kol-1 {width: 8.33%;}
-    .kol-2 {width: 16.66%;}
-    .kol-3 {width: 25%;}
-    .kol-4 {width: 33.33%;}
-    .kol-5 {width: 41.66%;}
-    .kol-6 {width: 50%;}
-    .kol-7 {width: 58.33%;}
-    .kol-8 {width: 66.66%;}
-    .kol-9 {width: 75%;}
-    .kol-10 {width: 83.33%;}
-    .kol-11 {width: 91.66%;}
-    .kol-12 {width: 100%;} 
-
-    .container {
-        width: 60%;
-    }
-    
-    body {
-        font-size: 1.2rem;
-    } 
-    
-    hr { margin-bottom: 40px; }
-
-    .socmed { 
-        margin-top: 25px;
-    }
+/* Extra large devices (large laptops and desktops) */ 
+@media only screen and (min-width: 1200px) { 
+    body { font-size: 1.2rem; } 
+    .stopfles { width: 60%; }
 }

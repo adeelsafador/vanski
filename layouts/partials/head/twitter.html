@@ -1,0 +1,8 @@
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@lVANSKl">
+    <meta name="twitter:creator" content="@lVANSKl">
+    <meta name="twitter:title" content="{{ .Title }}">{{ if .Description }}
+    <meta name="twitter:description" content="{{ .Description }}">{{ else if eq .Kind "section" }}
+    <meta name="twitter:description" content="{{ .Summary }}">{{ else }}
+    <meta name="twitter:description" content="{{ .Site.Params.Description }}">{{ end }}{{ $card := resources.Get "img/vanski.jpg" }}

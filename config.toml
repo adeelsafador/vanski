@@ -1,12 +1,16 @@
 baseURL = "/"
 languageCode = "en-us"
 title = "Home | van.ski" 
+paginate = 8
 enableEmoji = true
+disableHugoGeneratorInject = true 
 
 [params]
-    Description = "Ivan's little notes"
+    Description = "My Personal Website"
+    author = "IceBaby"
 
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
-            unsafe = true 
+            unsafe = true
+

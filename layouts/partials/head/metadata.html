@@ -1,0 +1,21 @@
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title}}</title> {{ $css := resources.Get "main.css" }} {{ $js := resources.Get "main.js" }} 
+    <link rel="preload stylesheet" href="{{ $css.Permalink }}" as="style" type="text/css"> 
+    <script type="text/javascript" src="{{ $js.Permalink }}" defer></script> 
+    <!-- Meta SEO -->
+    {{- if .IsPage }}
+    <meta property="article:published_time" content="{{ .Date.Format "02 Jan 2006" }}" />
+    {{ else }}
+    <meta property="article:published_time" content="21 Dec 2020" />
+    {{ end -}}
+    <meta property="og:title" content="{{ .Title }}" />
+    {{- if .Description }}
+    <meta property="og:description" content="{{ .Description }}" />
+    {{ else if eq .Kind "section" }}
+    <meta property="og:description" content="{{ .Summary }}" />
+    {{ else }}
+    <meta property="og:description" content="{{ .Site.Params.Description }}" />
+    {{ end -}}
+    <meta property="og:url" content="{{ .Page.Permalink }}">

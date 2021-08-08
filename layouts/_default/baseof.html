@@ -1,8 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#">
-{{ partial "head.html" . }}
-<body>
-{{- block "main" . }}{{- end }} 
-{{ if .IsHome }} {{ partial "footer.html" }} {{ end }}
+<html lang="en" prefix="og: http://ogp.me/ns#"> 
+<head>
+{{ partial "head/metadata.html" . }} 
+{{ partial "head/twitter.html" . }}
+</head>
+<body> 
+{{ partial "header/site-nav.html" . }} 
+<main class="stopfles"> 
+{{- block "main" . }} {{- end -}} 
+</main> 
+
+{{ partial "footer/site-footer.html" }}
 </body>
 </html>
