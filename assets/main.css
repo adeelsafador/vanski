@@ -69,6 +69,7 @@ a.icons:hover { transform: translateY(-0.1em); }
 
 /* Common */ 
 * { margin: 0; padding: 0; box-sizing: border-box; } 
+*::before, *::after { box-sizing: border-box; }
 body { font-family: 'Inconsolata', monospace; background: var(--background); color: var(--text); }
 .stopfles { padding: 0 15px; margin: 0 auto; } 
 a { text-decoration: none; } 
