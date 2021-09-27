@@ -1,16 +1,29 @@
 baseURL = "/"
 languageCode = "en-us"
-title = "Home | van.ski" 
+defaultContentLanguage = "id"
+title = "van.ski | Ivan's Personal Website"
+copyright = "Copyright &copy; 2021 - van.ski"
 paginate = 8
-enableEmoji = true
-disableHugoGeneratorInject = true 
-
-[params]
-    Description = "My Personal Website"
-    author = "IceBaby"
+enableEmoji = true 
 
 [markup]
     [markup.goldmark]
         [markup.goldmark.renderer]
             unsafe = true
+[params]
+    Description = "Catatan kecil Ivan"
+    author = "Ivan"
 
+[permalinks]
+    blog = ":slug"
+
+[outputs]
+    section = ["html", "json"]
+    home = ["html", "rss"]
+
+[outputFormats]
+    [outputFormats.RSS]
+        mediatype = "application/rss"
+        baseName = "feed"
+
+rssLimit = 20

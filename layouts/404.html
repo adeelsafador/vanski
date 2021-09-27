@@ -1,10 +1,27 @@
-{{ define "main" }} 
-{{- $image := resources.Get "404.png" }}
-    <main class="--center"> 
-        <img src="{{ $image.Permalink }}" alt="404">
-        <h4>This page is temporarily unavailable.</h4> 
-        <h4 class="underline">
-            <a href="{{ "/" | relURL }}">Go Home</a>
-        </h4>
-    </main> 
-{{ end }} 
+<!doctype html>
+<html lang="id">
+<head>
+    {{ partial "head/metadata.html" . }} 
+    {{ partial "head/twitter.html" . }} 
+    {{ partial "head/scripts.html" . }}
+</head>
+<body>
+    <main class="stopfles">
+    <div class="row --center">
+        <div class="col">{{ $image := resources.Get "404.png" }}
+            <img src="{{ $image.Permalink }}" alt="404">
+        </div>
+    </div>
+    <div class="row err404">
+        <div class="col">
+            <p>Ups! Sepertinya ada yang salah di antara kita,</p>
+            <p>mungkin itu kamu atau mungkin juga saya.</p>
+            <p>Ayo kita kembali ke jalan yang benar! &#128521;</a></p>
+            <a href="{{ "/" | relURL }}" class="btn404">Kembali</a>
+        </div>
+    </div>
+    <br><hr>
+</main>
+
+</body>
+</html>

@@ -1,15 +1,15 @@
 <!DOCTYPE html>
-<html lang="en" prefix="og: http://ogp.me/ns#"> 
+<html lang="en" prefix="og: https://ogp.me/ns#">
 <head>
-{{ partial "head/metadata.html" . }} 
-{{ partial "head/twitter.html" . }}
+    {{- partial "head/metadata.html" . }} 
+    {{- partial "head/twitter.html" . }} 
+    {{- partial "head/scripts.html" . }}
 </head>
-<body> 
-{{ partial "header/site-nav.html" . }} 
-<main class="stopfles"> 
-{{- block "main" . }} {{- end -}} 
-</main> 
-
-{{ partial "footer/site-footer.html" }}
+<body>
+    {{ partial "nav.html" . }}
+<main class="stopfles">
+    {{ block "main" . }}{{- end }}
+</main>
+    {{ partial "footer.html" . }}
 </body>
 </html>

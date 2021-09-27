@@ -1,6 +1,50 @@
-{{ define "main" }} 
-<div class="--center">
-    <h1>{{ .Title }}</h1> 
-    <p>Currently unable to display data, please come back later.<a href="/">Back</a></p> 
+{{ define "main" }}
+
+{{ if eq .Type "blog" }} 
+<h1><strong>{{ .Title }}</strong></h1> 
+<section class="search-container"> 
+    <label for="search-input" class="search-label"></label>
+    <input id="search-input" class="input-search" type="text" placeholder=" Cari Bacaan" name="search" autocomplete="off">
+</section>
+
+<section id="search-results" class="search"></section>
+
+<div class="tags">
+    <span>Atau cari berdasarkan tags</span><br>
+    <select class="select-tags" onchange="location = this.value"> 
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }} 
+        <option value="/tags/{{ $name }}">#{{ $name }}</option> 
+        {{- end }}
+    </select>
 </div>
+
+<br> 
+
+<section class="listpages"> 
+<h3 class="--center">Daftar Bacaan</h2> 
+<ul>{{ range .Paginator.Pages }}
+    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}
+</ul>
+</section>
+
+<section class="paginator">
+    {{ template "_internal/pagination.html" . -}}
+</section> 
+    {{- else if eq .Type "tags" }} 
+    {{if and (eq .Kind "term") (eq .Type "tags") }} 
+    <h2 class="--capitalize">Tags {{ .Title }}</h2> 
+    {{ end -}}  
+
+{{ range .Pages }}
+<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }} {{ else }}
+{{ range .Pages }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}{{ end }} 
+    <br> 
+
+    {{if and (eq .Kind "term") (eq .Type "tags") }} 
+    <p>Daftar Tags</p> 
+    
+    {{ range $name, $taxonomy := .Site.Taxonomies.tags }} 
+    <a href="/tags/{{ $name }}">#{{ $name }}</a> 
+    {{ end }} 
+    {{- end }} 
 {{ end }}

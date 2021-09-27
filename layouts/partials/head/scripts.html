@@ -1,0 +1,4 @@
+    {{ $css := resources.Get "main.css" }} 
+    <link rel="preload stylesheet" href="{{ $css.Permalink }}">
+    {{- $js := resources.Get "main.js" }} 
+    <script type="text/javascript" src="{{ $js.Permalink }}" defer></script> 

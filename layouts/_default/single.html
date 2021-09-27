@@ -1,0 +1,18 @@
+{{ define "main" }}
+<h1 class="--center"><strong>{{ .Title }}</strong></h1>
+    <br>
+<article>
+{{ .Content }}</article>
+
+<hr>
+
+<section>
+    <div class="date"><i class="fas fa-feather"></i> Ditulis pada: {{ if isset .Params "customdate" }}{{ .Params.customdate }}{{ else }}{{ .Date.Format "02 Jan 2006" }}{{ end }}</div>{{ with .Params.tags }}
+    <div class="tags">
+        <span>Tags terkait: </span>{{ range . }}
+        <a href="/tags/{{ . | urlize }}">#{{ . }}</a>{{ end }}
+    </div>
+</section>
+
+<hr>
+{{ end }} {{ end }}

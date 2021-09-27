@@ -1,0 +1,13 @@
+{{ define "main" }} 
+<h1 class="--center --capitalize">Tags {{ .Title }}</h1> 
+<div class="tags">
+    <span>Pilih tags</span> 
+    <select name="select-tags" onchange="location = this.value"> 
+        {{ range $name, $taxonomy := .Site.Taxonomies.tags }} 
+        <option value="/tags/{{ $name }}">#{{ $name }}</option> 
+        {{- end }}
+    </select>
+</div>
+{{ range .Pages }}
+<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}
+{{ end }}

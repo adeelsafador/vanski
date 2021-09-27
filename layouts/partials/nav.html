@@ -1,3 +1,55 @@
-<nav>
+
+<nav> 
+{{- if .IsHome }} 
     
-</nav>
+    <a href="/"><span>/<h2 class="--inline">van.ski</h2></span></a> 
+{{- end }} 
+
+{{- if and (eq .Kind "section") (eq .Type "blog") }} 
+
+    <a href="/" class="icons icons--home" title="Home"> 
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"> 
+
+            <path d="M16 0l-16 16h4v16h24v-16h4l-16-16zM24 28h-6v-6h-4v6h-6v-14.344l8-5.656 8 5.656v14.344z"></path> 
+
+        </svg> 
+
+    </a> 
+{{- else if and (eq .Type "blog") (.IsPage) }}
+    <a href="/blog" class="icons icons--back" title="Back"> 
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"> 
+
+            <path d="M32 16c0-8.836-7.164-16-16-16-8.837 0-16 7.164-16 16 0 8.837 7.163 16 16 16 8.836 0 16-7.163 16-16zM8 16l8-8v6h8v4h-8v6l-8-8z"></path> 
+
+        </svg> 
+
+    </a> 
+
+{{- end }} 
+
+{{ if eq .Type "tags" }}
+<a href="/blog" class="icons icons--back" title="Back"> 
+        
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"> 
+
+        <path d="M32 16c0-8.836-7.164-16-16-16-8.837 0-16 7.164-16 16 0 8.837 7.163 16 16 16 8.836 0 16-7.163 16-16zM8 16l8-8v6h8v4h-8v6l-8-8z"></path> 
+
+    </svg> 
+
+</a> 
+{{ end }} 
+    <ul> 
+
+        <li><label for="theme--switch" class="theme--label"></label></li> 
+
+        <li><label for="theme--switch" id="theme--icon" class="theme--icon"></label></li> 
+
+        <li hidden><button id="theme--switch"></button></li> 
+
+    </ul> 
+
+</nav> 
+
+<section class="stopfles"><hr></section>
