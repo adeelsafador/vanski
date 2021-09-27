@@ -8,7 +8,7 @@
     <meta name="description" content="{{ .Site.Params.Description }}" />{{ end }}
     <meta name="author" content="ivan">
     
-    {{ "<!-- Meta SEO -->" | safeHTML }}> {{ if .IsPage }}
+    {{ "<!-- Meta SEO -->" | safeHTML }} {{ if .IsPage }}
     <meta property="article:published_time" content="{{ .Date.Format "02 Jan 2006" }}" />{{ else }}
     <meta property="article:published_time" content="21 Dec 2020" />{{ end }}
     <meta property="og:title" content="{{ .Title }}" />{{ if .Description }}
