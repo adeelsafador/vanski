@@ -66,7 +66,9 @@ a.icons:hover { transform: translateY(-0.1em); }
 .--uline { text-decoration: underline; } 
 .--hidden { visibility: hidden; } 
 .--visible { visibility: visible; } 
-.--capitalize { text-transform: capitalize; }
+.--capitalize { text-transform: capitalize; } 
+.--noboxsizing { margin: 0 !important; padding: 0 !important;  } 
+.--error { color: red; }
 
 /* Common */ 
 * { margin: 0; padding: 0; box-sizing: border-box; } 
@@ -106,10 +108,10 @@ section > hr { border: 1 solid var(--text); margin-bottom: 30px; }
 .socmed { margin-top: 25px;} 
 
 /* Main Link */ 
-.main-link { margin: 15px 0; }
+.main-link { margin: 15px 0; } 
 
 .main-link ul li a {
-    display: inline-block;
+    display: inline-block; 
     vertical-align: middle;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
@@ -205,7 +207,9 @@ select.select-tags {
     display: flex;
     justify-content: center;
 } 
-
+.main-link ul li {
+    margin: auto !important;
+}
 .paginator {
     padding: 20px;
     margin-top: 20px;
@@ -287,6 +291,10 @@ footer { margin-top: 40px; }
     .cl-s-10 {width: 83.33%;}
     .cl-s-11 {width: 91.66%;}
     .cl-s-12 {width: 100%;} 
+
+    .main-link ul li {
+        margin: -20px !important;
+    }
 
     #search-input {
         width: 90%;

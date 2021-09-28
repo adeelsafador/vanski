@@ -105,7 +105,7 @@ function renderSearchResults(results) {
 	
 	// if results are empty
 	} else {
-		searchResults.innerHTML = '<p style="color: #e42a2a;">Hasil pencarian tidak ada :(</p>' 
+		searchResults.innerHTML = '<p class="--error">Hasil pencarian tidak ada (:|</p>' 
 		// Hide listpages 
 		$('.listpages').css('display','block') 
 		
@@ -135,6 +135,18 @@ function registerSearchHandler() {
 	searchInput.focus()
 	// searchInput.placeholder = ''
 }
+
+// Tags Select 
+$(function(){
+	// bind change event to select
+	$('.select-tags').on('change', function () {
+		var url = $(this).val(); // get selected value
+		if (url) { // require a URL
+			window.location = $(this).val()
+		}
+		return false;
+	});
+});
 
 window.onload = function() {
 

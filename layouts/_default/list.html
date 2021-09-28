@@ -11,7 +11,7 @@
 
 <div class="tags">
     <span>Atau cari berdasarkan tags</span><br>
-    <select class="select-tags" onchange="location = this.value"> 
+    <select class="select-tags"> 
         {{ range $name, $taxonomy := .Site.Taxonomies.tags }} 
         <option value="/tags/{{ $name }}">#{{ $name }}</option> 
         {{- end }}
