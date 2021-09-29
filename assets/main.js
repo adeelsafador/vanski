@@ -138,15 +138,12 @@ function registerSearchHandler() {
 
 // Tags Select 
 $(function(){
-	// bind change event to select
 	$('.select-tags').on('change', function () {
-		var url = $(this).val(); // get selected value
-		if (url) { // require a URL
-			window.location = $(this).val()
-		}
-		return false;
-	});
-});
+		let url = $(this).val()
+		if (url) { window.location = $(this).val() }
+		return false
+	})
+})
 
 window.onload = function() {
 

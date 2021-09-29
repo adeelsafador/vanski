@@ -2,7 +2,8 @@ baseURL = "/"
 languageCode = "en-us"
 defaultContentLanguage = "id"
 title = "van.ski | Ivan's Personal Website"
-copyright = "Copyright &copy; 2021 - van.ski"
+copyright = "Copyright &copy; 2021 - van.ski" 
+disableHugoGeneratorInject = true
 paginate = 8
 enableEmoji = true 
 

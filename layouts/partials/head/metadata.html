@@ -1,32 +1,68 @@
     
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>{{ .Title }}</title>{{ if .Description }}
-    <meta name="description" content="{{ .Description }}" />{{ else if eq .Kind "section" }}
-    <meta name="description" content="{{ .Summary }}" />{{ else }}
-    <meta name="description" content="{{ .Site.Params.Description }}" />{{ end }}
-    <meta name="author" content="ivan">
+    <meta charset="utf-8"> 
+    <meta name="google-site-verification" content="_yey9SZZTCJ7VZfeho_jYMHEnW8aptkVTM0jj122PLU" />
+    <link rel=preload href="/fonts/inconsolata-font/inconsolata-font.woff2" as="font" type="font/woff2" crossorigin> 
+    {{ with .OutputFormats.Get "rss" -}}
+        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+    <meta http-equiv=x-ua-compatible content="IE=edge"> 
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{ .Title }}</title>
+    {{- if .Description }}
+    <meta name="description" content="{{ .Description }}" />
+        {{- else if eq .Kind "section" }}
+    <meta name="description" content="{{ .Summary }}" />
+        {{- else }}
+    <meta name="description" content="{{ .Site.Params.Description }}" />
+    {{- end }}
     
-    {{ "<!-- Meta SEO -->" | safeHTML }} {{ if .IsPage }}
-    <meta property="article:published_time" content="{{ .Date.Format "02 Jan 2006" }}" />{{ else }}
-    <meta property="article:published_time" content="21 Dec 2020" />{{ end }}
-    <meta property="og:title" content="{{ .Title }}" />{{ if .Description }}
-    <meta property="og:description" content="{{ .Description }}" />{{ else if eq .Kind "section" }}
-    <meta property="og:description" content="{{ .Summary }}" />{{ else }}
-    <meta property="og:description" content="{{ .Site.Params.Description }}" />{{ end }}
+    {{ "<!-- SEO -->" | safeHTML }} 
+    {{- if .IsPage }}
+    <meta property="article:published_time" content="{{ .Date.Format "02 Jan 2006" }}" />
+    {{- end }}
+    <meta property="og:title" content="{{ .Title }}" /> 
+    {{- if .Description }}
+    <meta property="og:description" content="{{ .Description }}" />
+        {{- else if eq .Kind "section" }}
+    <meta property="og:description" content="{{ .Summary }}" />
+        {{- else }}
+    <meta property="og:description" content="{{ .Site.Params.Description }}" />
+    {{- end }}
     <meta property="og:url" content="{{ .Page.Permalink }}"> 
     {{- $card := resources.Get "img/vanski.png" -}}
     <meta property="og:image" content="{{ $card.Permalink }}"> 
 
-    {{ "<!-- RSS -->" | safeHTML }}
-    {{ with .OutputFormats.Get "rss" -}}
-        {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
-    {{ end -}}
     <link rel="canonical" href="{{ .Permalink }}" /> 
 
-    {{ "<!-- Favicon -->" | safeHTML }}
-    {{- $favicon := resources.Get "favicons/favicon.ico" }}
-    <link rel="shortcut icon" href="{{ $favicon.Permalink }}" type="image/x-icon">{{ $favicon32 := resources.Get "favicons/favicon-32x32.png" }}
-    <link rel="icon" href="{{ $favicon32.Permalink }}" type="image/png">{{ $favicon16 := resources.Get "favicons/favicon-16x16.png" }}
+    {{ "<!-- Favicons -->" | safeHTML }} 
+    {{- $apple_touch_icon_57 := resources.Get "favicons/apple-icon-57x57.png" }} 
+    {{- $apple_touch_icon_60 := resources.Get "favicons/apple-icon-60x60.png" }} 
+    {{- $apple_touch_icon_72 := resources.Get "favicons/apple-icon-72x72.png" }} 
+    {{- $apple_touch_icon_76 := resources.Get "favicons/apple-icon-76x76.png" }} 
+    {{- $apple_touch_icon_114 := resources.Get "favicons/apple-icon-114x114.png" }} 
+    {{- $apple_touch_icon_120 := resources.Get "favicons/apple-icon-120x120.png" }} 
+    {{- $apple_touch_icon_144 := resources.Get "favicons/apple-icon-144x144.png" }} 
+    {{- $apple_touch_icon_152 := resources.Get "favicons/apple-icon-152x152.png" }} 
+    {{- $apple_touch_icon_180 := resources.Get "favicons/apple-icon-180x180.png" }} 
+    <link rel="apple-touch-icon" sizes="57x57" href="{{ $apple_touch_icon_57.Permalink }}">
+    <link rel="apple-touch-icon" sizes="60x60" href="{{ $apple_touch_icon_60.Permalink }}">
+    <link rel="apple-touch-icon" sizes="72x72" href="{{ $apple_touch_icon_72.Permalink }}">
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ $apple_touch_icon_76.Permalink }}">
+    <link rel="apple-touch-icon" sizes="114x114" href="{{ $apple_touch_icon_114.Permalink }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ $apple_touch_icon_120.Permalink }}">
+    <link rel="apple-touch-icon" sizes="144x144" href="{{ $apple_touch_icon_144.Permalink }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ $apple_touch_icon_152.Permalink }}"> 
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ $apple_touch_icon_180.Permalink }}"> 
+    {{- $android_icon_192 := resources.Get "favicons/android-icon-192x192.png" }} 
+    <link rel="icon" type="image/png" sizes="192x192"  href="{{ $android_icon_192.Permalink }}">
+    {{- $favicon := resources.Get "favicons/favicon.ico" }} 
+    <link rel="shortcut icon" href="{{ $favicon.Permalink }}" type="image/x-icon">
+    {{- $favicon32 := resources.Get "favicons/favicon-32x32.png" }}
+    <link rel="icon" href="{{ $favicon32.Permalink }}" type="image/png">
+    {{- $favicon16 := resources.Get "favicons/favicon-16x16.png" }}
     <link rel="icon" href="{{ $favicon16.Permalink }}" type="image/png"> 
+    {{- $manifest := resources.Get "favicons/manifest.json" }}
+    <link rel="manifest" href="{{ $manifest.Permalink }}">
+
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f1f4ff">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1c1c1b">

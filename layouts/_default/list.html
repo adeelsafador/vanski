@@ -1,7 +1,8 @@
 {{ define "main" }}
 
-{{ if eq .Type "blog" }} 
+{{- if eq .Type "blog" }} 
 <h1><strong>{{ .Title }}</strong></h1> 
+
 <section class="search-container"> 
     <label for="search-input" class="search-label"></label>
     <input id="search-input" class="input-search" type="text" placeholder=" Cari Bacaan" name="search" autocomplete="off">
@@ -21,23 +22,29 @@
 <br> 
 
 <section class="listpages"> 
-<h3 class="--center">Daftar Bacaan</h2> 
-<ul>{{ range .Paginator.Pages }}
-    <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}
-</ul>
+
+    <h3 class="--center">Daftar Bacaan</h2> 
+    <ul>{{ range .Paginator.Pages }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}
+    </ul> 
+
 </section>
 
 <section class="paginator">
     {{ template "_internal/pagination.html" . -}}
 </section> 
     {{- else if eq .Type "tags" }} 
-    {{if and (eq .Kind "term") (eq .Type "tags") }} 
+        {{if and (eq .Kind "term") (eq .Type "tags") }} 
     <h2 class="--capitalize">Tags {{ .Title }}</h2> 
-    {{ end -}}  
+        {{ end -}}  
 
-{{ range .Pages }}
-<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }} {{ else }}
-{{ range .Pages }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>{{ end }}{{ end }} 
+    {{ range .Pages }}
+<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }} 
+    {{ else }}
+    {{ range .Pages }}<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+    {{ end }}
+{{- end }} 
     <br> 
 
     {{if and (eq .Kind "term") (eq .Type "tags") }} 

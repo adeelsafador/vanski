@@ -1,4 +1,4 @@
     {{ $css := resources.Get "main.css" | resources.Minify | fingerprint }} 
     <link rel="stylesheet" href="{{ $css.Permalink }}">
-    {{- $js := resources.Get "main.js" | resources.Minify | resources.Fingerprint "sha512" }} 
-    <script defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script> 
+    {{- $js := resources.Get "main.js" | resources.Minify | resources.Fingerprint "sha256" }} 
+    <script type=text/javascript defer src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}"></script> 
