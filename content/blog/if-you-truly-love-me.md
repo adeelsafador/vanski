@@ -2,7 +2,7 @@
 title: "If You Truly Love me, Do Not Create Me, in Your Mind"
 date: 2023-08-23T19:54:27+07:00
 draft: false
-description: "Jika engkau sungguh mencitaiku ..."
+description: "Jika engkau sungguh mencintaiku ..."
 tags: 
 - semua
 - belajar 
