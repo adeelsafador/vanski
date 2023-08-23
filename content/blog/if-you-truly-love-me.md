@@ -2,7 +2,7 @@
 title: "If You Truly Love me, Do Not Create Me, in Your Mind"
 date: 2023-08-23T19:54:27+07:00
 draft: false
-description: "sebelum ..."
+description: "Jika engkau sungguh mencitaiku ..."
 tags: 
 - semua
 - belajar 
@@ -23,6 +23,8 @@ Karena segala sesuatunya tidak tetap, maka kita perlu memahami dan menerima keny
 
 Saat cinta datang, jangan berekspektasi apapun tentang "dia", jangan berspekulasi apapun tentang "dia", jangan menciptakan "dia" di dalam pikiran kita.   Saat cinta datang, gunakan pikiran dan emosi secukupnya agar pikiran dan emosi tidak terganggu.  
 
-Dengan demikian, kita akan memandang orang yang dicintai di dalam kenyataan sebagaimana adanya. Semua menjadi jelas nyata dan cinta tumbuh dengan sendirinya.   
+Dengan demikian, kita akan memandang orang yang dicintai di dalam kenyataan sebagaimana adanya. Semua menjadi jelas nyata dan cinta tumbuh dengan sendirinya. Jadi, jika engkau sungguh mencintaiku, maka jangan ciptakan aku di pikiranmu ;)) 
+
+
 <br>
-Menarik sekali apa yang disampaikan oleh Ajahn Amaro, saya sendiri belum mencobanya saat tulisan ini dibuat. Apakah kamu berminat untuk mencobanya?
+Menarik sekali apa yang disampaikan oleh Ajahn Amaro, saya sendiri belum mencobanya saat tulisan ini dibuat. Apakah kamu berminat untuk mencobanya?  
