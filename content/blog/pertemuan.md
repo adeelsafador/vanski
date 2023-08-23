@@ -11,10 +11,10 @@ tags:
 ---
 
 ## **Apa Itu Pertemuan?**
-Setiap orang tentu memiki pengertian masing-masing tentang pertemuan. Menurut saya, pertemuan adalah satu misteri yang menjadi permulaan dari satu cerita yang terjadi di kehidupan setiap orang, tanpa diminta, tanpa dikira, dan tanpa diduga, tanpa direncanakan, dan bahkan tanpa diminta sekalipun. Sejak kita tumbuh hingga pada akhirnya kelak kita layu, tidak ada manusia yang hidup seorang diri, seorang pun tidak. Mau tidak mau kita pasti akan bertemu dengan orang lain.
+Setiap orang tentu memiki pengertian masing-masing tentang pertemuan. Menurut penulis, pertemuan adalah satu misteri yang menjadi permulaan dari satu cerita yang terjadi di kehidupan setiap orang, tanpa diminta, tanpa dikira, dan tanpa diduga, tanpa direncanakan, dan bahkan tanpa diminta sekalipun. Sejak kita tumbuh hingga pada akhirnya kelak kita layu, tidak ada manusia yang hidup seorang diri, seorang pun tidak. Mau tidak mau kita pasti akan bertemu dengan orang lain.
 
 # **Mengapa Kita Bertemu Satu Sama Lain?**
-Saya percaya bahwa segala sesuatu tidak ada yang benar-benar kebetulan. Segala sesuatu yang terjadi selalu ada alasannya dan tentulah ada masanya. Tuhan yang Maha Segalanya, Dia yang mempertemukan kita semua sesuai dengan ketentuan-Nya. Selama ini banyak orang yang sudah dimunculkan di dalam kehidupan kita. Semakin hari semakin berlipat-lipat banyaknya. Orang-orang yang datang ke dalam kehidupan kita memiliki perannya masing-masing.
+Penulis percaya bahwa segala sesuatu tidak ada yang benar-benar kebetulan. Segala sesuatu yang terjadi selalu ada alasannya dan tentulah ada masanya. Tuhan yang Maha Segalanya, Dia yang mempertemukan kita semua sesuai dengan ketentuan-Nya. Selama ini banyak orang yang sudah dimunculkan di dalam kehidupan kita. Semakin hari semakin berlipat-lipat banyaknya. Orang-orang yang datang ke dalam kehidupan kita memiliki perannya masing-masing.
 
 Entah pun perannya itu, kita perlu ingat! Di setiap pertemuan akan selalu ada pelajaran berharga yang boleh kita dapatkan.
 

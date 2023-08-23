@@ -1,17 +1,14 @@
 /* Fonts */ 
-/* inconsolata (font-family: 'Inconsolata', monospace;) */
+/* inconsolata-500 - latin */
 @font-face {
-    font-family: 'inconsolata-font';
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inconsolata';
     font-style: normal;
-    font-weight: 400;
-    src: url('fonts/inconsolata-font.eot'); /* IE9 Compat Modes */
-    src: local(''),
-         url('fonts/inconsolata-font.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-         url('fonts/inconsolata-font.woff2') format('woff2'), /* Super Modern Browsers */
-         url('fonts/inconsolata-font.woff') format('woff'), /* Modern Browsers */
-         url('fonts/inconsolata-font.ttf') format('truetype'), /* Safari, Android, iOS */
-         url('fonts/inconsolata-font.svg#Inconsolata') format('svg'); /* Legacy iOS */
-} 
+    font-weight: 500;
+    src: url('fonts/inconsolata-v31-latin-500.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+         url('fonts/inconsolata-v31-latin-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
+  }
+  
 
 /* Colors */ 
 :root {
@@ -73,7 +70,7 @@ a.icons:hover { transform: translateY(-0.1em); }
 /* Common */ 
 * { margin: 0; padding: 0; box-sizing: border-box; } 
 *::before, *::after { box-sizing: border-box; }
-body { line-height: 1.3em; font-family: 'inconsolata', monospace; background: var(--background); color: var(--text); } 
+body { line-height: 1.3em; font-family: 'Inconsolata', monospace; background: var(--background); color: var(--text); } 
 .stopfles { padding: 0 15px; margin: 0 auto; } 
 a { text-decoration: none; } 
 ul li { list-style: none; }
@@ -84,7 +81,7 @@ h2 { font-size: 1.4em; margin: 12px 0; }
 h3 { font-size: 1.3em; margin: 12px 0; } 
 h4 { font-size: 1.2em; margin: 12px 0; } 
 h5 { font-size: 1,1em; margin: 12px 0; } 
-div, p, a, ul li, small  { margin: 12px 0; } 
+div, p, a, ul li, small  { font-size: 1.1em; margin: 12px 0; } 
 
 /* Site-Nav */ 
 nav {
