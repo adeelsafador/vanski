@@ -10,7 +10,7 @@ tags:
 - love 
 ---
 
-Katanya Ajahn Amaro, "Jika engkau mencintaiku, maka jangan engkau menciptkan aku di pikiranmu" dalam (*https://amaravati.org/audio/if-you-truly-love-me-dont-create-me-in-your-mind/*)  
+Katanya Ajahn Amaro, "Jika engkau mencintaiku, maka jangan engkau menciptakan aku di pikiranmu" dalam (*https://amaravati.org/audio/if-you-truly-love-me-dont-create-me-in-your-mind/*)  
 
 
 # **Jatuh Cinta**
@@ -23,7 +23,7 @@ Karena segala sesuatunya tidak tetap, maka kita perlu memahami dan menerima keny
 
 Saat cinta datang, jangan berekspektasi apapun tentang "dia", jangan berspekulasi apapun tentang "dia", jangan menciptakan "dia" di dalam pikiran kita.   Saat cinta datang, gunakan pikiran dan emosi secukupnya agar pikiran dan emosi tidak terganggu.  
 
-Dengan demikian, kita akan memandang orang yang dicintai di dalam kenyataan sebagaimana adanya. Semua menjadi jelas nyata dan cinta tumbuh dengan sendirinya. Jadi, jika engkau sungguh mencintaiku, maka jangan ciptakan aku di pikiranmu ;)) 
+Dengan demikian, kita akan memandang orang yang dicintai di dalam kenyataan sebagaimana adanya. Semua menjadi jelas nyata dan biarlah cinta tumbuh dengan sendirinya. Jadi, jika engkau sungguh mencintaiku, maka jangan ciptakan aku di pikiranmu ;)) 
 
 
 <br>

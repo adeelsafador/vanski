@@ -13,4 +13,4 @@ Sebelum berdoa, percayalah.
 Sebelum berbicara, dengarkanlah.  
 Sebelum menulis, pikirkanlah.  
 Sebelum menyerah, cobalah.  
-Sebelum meningal, hiduplah.
+Sebelum meninggal, hiduplah.

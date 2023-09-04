@@ -1,7 +1,7 @@
 ---
 title: "Masih Terus Mencari"
 date: 2021-07-04T14:48:39+07:00
-draft: true 
+draft: false 
 description: "... masih mencari ..."
 tags: 
 - semua 
