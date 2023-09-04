@@ -13,7 +13,7 @@ Banyak orang selalu mengeluh, alasannya macam-macam. Ada yang karena pekerjaanny
 
 Jika kamu sedang mengalami hal-hal tersebut, percayalah bahwa lelah ini hanya sementara saja. Walaupun tidak mudah, tetap berusaha dan bekerja keras, dan jangan pernah merasa tidak berguna.
 
-Kamu tahu? Tanpa disadari keberadaan kita ini secara alami ternyata sudah berguna kok! Di setiap waktu kita mengeluarkan karnondioksida yang menjadi makanan bagi para tumbuhan guna mempertahankan keberadaan mereka. Di setiap waktu, tubuh kita sudah menjadi rumah bagi jutaan mikroorganisme. Bahkan, feses kita pun mejadi pupuk yang sangat berharga bagi para tumbuhan.
+Kamu tahu? Tanpa disadari keberadaan kita ini secara alami ternyata sudah berguna kok! Di setiap waktu kita mengeluarkan karbondioksida yang menjadi makanan bagi para tumbuhan guna mempertahankan keberadaan mereka. Di setiap waktu, tubuh kita sudah menjadi rumah bagi jutaan mikroorganisme. Bahkan, feses kita pun mejadi pupuk yang sangat berharga bagi para tumbuhan.
 
 Memang tidak semua orang dapat sesuatu yang besar yang dianggap berguna kepada orang lain, tetapi kita dapat melakukan hal-hal sederhana yang berguna. Ketika kita tersenyum saja, itu sudah memberikan energi positif dan memberikan sedikit kebahagiaan kepada sekitar kita. Ketika kita bersedia untuk mendengarkan orang lain berbicara, itu pun kita sudah mengurangi sedikit rasa kesepian mereka.
 

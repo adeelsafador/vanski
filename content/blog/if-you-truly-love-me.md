@@ -7,7 +7,7 @@ tags:
 - semua
 - belajar 
 - inspirasi
-- love 
+- cinta 
 ---
 
 Katanya Ajahn Amaro, "Jika engkau mencintaiku, maka jangan engkau menciptakan aku di pikiranmu" dalam (*https://amaravati.org/audio/if-you-truly-love-me-dont-create-me-in-your-mind/*)  
