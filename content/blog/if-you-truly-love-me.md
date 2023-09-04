@@ -17,7 +17,7 @@ Katanya Ajahn Amaro, "Jika engkau mencintaiku, maka jangan engkau menciptakan ak
 Saat kita sedang jatuh cinta, normalnya kita jatuh cinta pada sebuah gambaran tentang orang lain. Kita menciptakan “dia” di dalam kepala kita. Padahal, “dia” yang nyata belum tentu sama dengan “dia” yang kita bayangkan.  
 
 # **Kenyataan**  
-Berbagai penelitian *Neuroscience* dan *Astrophysics* sepakat bahwa tidak ada substansi yang tetap dan utuh, bahkan sekalipun itu atom penyusun alam semesta. Segala sesuatu berubah, tidak tetap. Begitu pun dengan orang yang kita kita kenal dan sayangi, mereka terus berubah, baik fisik, sikap, dan keadaannya.  
+Berbagai penelitian *Neuroscience* dan *Astrophysics* sepakat bahwa tidak ada substansi yang tetap dan utuh, bahkan sekalipun itu atom penyusun alam semesta. Segala sesuatu berubah, tidak tetap. Begitu pun dengan orang-orang yang kita kenal dan sayangi, mereka terus berubah, baik fisik, sikap, dan keadaannya.  
 
 Karena segala sesuatunya tidak tetap, maka kita perlu memahami dan menerima kenyataan yang ada. 
 
