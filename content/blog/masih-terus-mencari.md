@@ -20,4 +20,4 @@ Faktanya, setiap hal di dunia juga terus berubah.
 Orang yang terus mencari berarti akan terus belajar. Ia tidak akan pernah puas dengan hal-hal yang ia ketahui. Ia tidak akan pernah memutlakkan pemikirannya sebagai kebenaran utama yang harus diikuti orang lain.
 
 
-Saat ini saya masih terus mencari, 
+Saat ini saya masih terus mencari, dan ini cukup menyenangkan.
